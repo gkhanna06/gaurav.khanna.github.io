@@ -1,0 +1,1208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Gaurav Khanna | Lead Security Engineer</title>
+    <meta name="description" content="Lead Security Engineer for network and cloud security. 13+ years across Palo Alto, Prisma Access, Check Point, Azure and zero-trust architecture. CISM, PCNSE, AZ-500.">
+    <meta name="theme-color" content="#fbfbfd">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Gaurav Khanna | Lead Security Engineer">
+    <meta property="og:description" content="Network and cloud security lead. Next-generation firewalls, SASE and zero trust across hybrid environments.">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' x2='1'%3E%3Cstop offset='0' stop-color='%230071e3'/%3E%3Cstop offset='1' stop-color='%239a3fd0'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath d='M16 2l12 4.5v9C28 23 22.8 28.6 16 30 9.2 28.6 4 23 4 15.5v-9L16 2z' fill='url(%23g)'/%3E%3Cpath d='M11 16l3.5 3.5L21.5 12' fill='none' stroke='%23fff' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+
+    <!-- Mode classes before first paint. If the inline script at the end of the body never runs,
+         drop them again so every heading and paragraph stays visible. -->
+    <script>
+        (function () {
+            var c = document.documentElement.classList;
+            c.add('js');
+            document.addEventListener('DOMContentLoaded', function () {
+                if (!window.__siteReady) c.remove('js');
+            });
+        })();
+    </script>
+
+    <style>
+        /* ==========================================================================
+           Portfolio styles. No framework, no external requests.
+           Modes (set on <html>): .js  scripting available
+           ========================================================================== */
+        :root {
+            --bg: #fbfbfd;
+            --bg-2: #f5f5f7;
+            --ink: #1d1d1f;
+            --ink-2: #424245;
+            --ink-3: #6e6e73;
+            --line: rgba(0, 0, 0, .1);
+            --blue: #0071e3;
+            --blue-hi: #0066cc;
+            --link: #0066cc;
+            --on-dark: #f5f5f7;
+            --on-dark-2: #a1a1a6;
+            --grad: linear-gradient(90deg, #2997ff, #5e5ce6 55%, #bf5af2);
+            --grad-light: linear-gradient(90deg, #0071e3, #5e5ce6 58%, #9a3fd0);
+            --font: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", "Segoe UI", Roboto, "Noto Sans", Arial, sans-serif;
+            --nav-h: 48px;
+            --maxw: 1120px;
+            --gutter: 22px;
+            --ease: cubic-bezier(.28, .11, .32, 1);
+        }
+
+        /* ---------- reset ---------- */
+        *, *::before, *::after { box-sizing: border-box; }
+        html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; scroll-padding-top: var(--nav-h); }
+        body {
+            margin: 0;
+            background: var(--bg);
+            color: var(--ink);
+            font-family: var(--font);
+            font-size: 17px;
+            line-height: 1.47;
+            letter-spacing: -.022em;
+            -webkit-font-smoothing: antialiased;
+            text-rendering: optimizeLegibility;
+            overflow-x: hidden;
+        }
+        h1, h2, h3, p, ul, ol, dl, dd { margin: 0; }
+        ul, ol { padding: 0; list-style: none; }
+        a { color: inherit; text-decoration: none; }
+        h1, h2, h3 { text-wrap: balance; }
+        .lede, p { text-wrap: pretty; }
+        button { font: inherit; color: inherit; background: none; border: 0; padding: 0; cursor: pointer; }
+        svg { display: block; }
+        [hidden] { display: none !important; }
+        :focus-visible { outline: 2px solid var(--blue); outline-offset: 3px; border-radius: 6px; }
+        ::selection { background: rgba(0, 113, 227, .22); }
+
+        .skip {
+            position: absolute; left: 12px; top: -64px; z-index: 300;
+            background: var(--ink); color: #fff; padding: 10px 18px; border-radius: 999px;
+            transition: top .2s;
+        }
+        .skip:focus { top: 12px; }
+
+        .sprite { position: absolute; width: 0; height: 0; overflow: hidden; }
+        .icon {
+            width: 1.25em; height: 1.25em; flex: none;
+            fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round;
+        }
+
+        /* ---------- shared type and controls ---------- */
+        .wrap { width: min(var(--maxw), 100% - 2 * var(--gutter)); margin-inline: auto; }
+        .eyebrow {
+            font-size: clamp(15px, .6vw + 12px, 21px);
+            font-weight: 600; letter-spacing: -.012em; color: var(--ink-3);
+        }
+        .display {
+            font-size: clamp(42px, 8.2vw, 104px);
+            line-height: 1.03; font-weight: 700; letter-spacing: -.048em;
+        }
+        .display.sm { font-size: clamp(40px, 6.8vw, 88px); }
+        .section-title {
+            font-size: clamp(34px, 5.4vw, 68px);
+            line-height: 1.06; font-weight: 700; letter-spacing: -.04em;
+        }
+        .section-title.center { text-align: center; }
+        .lede {
+            font-size: clamp(19px, 1.5vw + 10px, 28px);
+            line-height: 1.26; font-weight: 500; letter-spacing: -.025em; color: var(--ink-3);
+        }
+        .lede strong { color: var(--ink); font-weight: 600; }
+        .dot { opacity: .45; margin-inline: .25em; }
+        .grad {
+            background-image: var(--grad-light);
+            -webkit-background-clip: text; background-clip: text;
+            -webkit-text-fill-color: transparent; color: transparent;
+        }
+        .dark .grad { background-image: var(--grad); }
+
+        .btn {
+            display: inline-flex; align-items: center; justify-content: center;
+            min-height: 48px; padding: 0 28px; border-radius: 999px;
+            background: var(--blue); color: #fff;
+            font-size: 17px; font-weight: 500; letter-spacing: -.022em;
+            transition: background .25s, transform .3s var(--ease);
+        }
+        .btn:hover { background: var(--blue-hi); }
+        .btn:active { transform: scale(.97); }
+        .link-arrow {
+            display: inline-flex; align-items: center; gap: 6px;
+            color: var(--link); font-size: 19px; font-weight: 500; letter-spacing: -.022em;
+        }
+        .link-arrow::after {
+            content: ""; width: .42em; height: .42em; margin-top: 1px;
+            border-top: 2px solid currentColor; border-right: 2px solid currentColor;
+            transform: rotate(45deg); transition: transform .3s var(--ease);
+        }
+        .link-arrow:hover::after { transform: translateX(4px) rotate(45deg); }
+        .link-arrow:hover { text-decoration: underline; text-underline-offset: 4px; }
+        .cta-row { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 14px 28px; }
+
+        .tags { display: flex; flex-wrap: wrap; gap: 6px; }
+        .tags li {
+            font-size: 12px; font-weight: 500; letter-spacing: -.005em;
+            padding: 4px 10px; border-radius: 999px; background: var(--bg-2); color: var(--ink-3);
+        }
+
+        /* ---------- scroll reveal ---------- */
+        .js [data-reveal] {
+            opacity: 0; transform: translateY(28px);
+            transition: opacity 1s var(--ease), transform 1s var(--ease);
+            transition-delay: calc(var(--i, 0) * 90ms);
+        }
+        .js [data-reveal].in { opacity: 1; transform: none; }
+        @media (prefers-reduced-motion: no-preference) {
+            .js .hero-copy [data-reveal] {
+                opacity: 1; transform: none; transition: none;
+                animation: rise .6s var(--ease) backwards;
+                animation-delay: calc(var(--i, 0) * 60ms);
+            }
+        }
+        @keyframes rise { from { opacity: 0; transform: translateY(28px); } }
+
+        /* ---------- global nav ---------- */
+        .gnav {
+            position: fixed; inset: 0 0 auto 0; height: var(--nav-h); z-index: 100;
+            background: rgba(251, 251, 253, .72);
+            -webkit-backdrop-filter: saturate(180%) blur(20px); backdrop-filter: saturate(180%) blur(20px);
+            border-bottom: 1px solid transparent;
+            transition: background .35s, border-color .35s, color .35s;
+        }
+        .gnav.scrolled { border-bottom-color: var(--line); }
+        .gnav.on-dark { background: rgba(0, 0, 0, .62); color: var(--on-dark); border-bottom-color: rgba(255, 255, 255, .12); }
+        .gnav .wrap { height: 100%; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+        .brand { display: inline-flex; align-items: center; gap: 8px; font-size: 17px; font-weight: 600; letter-spacing: -.03em; }
+        .brand .icon { width: 18px; height: 18px; color: var(--blue); }
+        .gnav.on-dark .brand .icon { color: #2997ff; }
+        .gnav-links { display: flex; gap: clamp(18px, 2.8vw, 38px); margin-left: auto; }
+        .gnav-links a { font-size: 12px; letter-spacing: -.01em; opacity: .78; transition: opacity .2s; }
+        .gnav-links a:hover, .gnav-links a[aria-current="location"] { opacity: 1; }
+        .gnav-cta {
+            font-size: 12px; font-weight: 500; color: #fff; background: var(--blue);
+            padding: 5px 14px; border-radius: 999px; transition: background .25s;
+        }
+        .gnav-cta:hover { background: var(--blue-hi); }
+        .menu-btn { display: none; position: relative; width: 44px; height: 44px; margin-right: -12px; }
+        .menu-btn span {
+            position: absolute; left: 13px; width: 18px; height: 1.5px; background: currentColor; border-radius: 2px;
+            transition: transform .4s var(--ease), top .4s var(--ease);
+        }
+        .menu-btn span:nth-child(1) { top: 19px; }
+        .menu-btn span:nth-child(2) { top: 25px; }
+        .menu-btn[aria-expanded="true"] span:nth-child(1) { top: 22px; transform: rotate(45deg); }
+        .menu-btn[aria-expanded="true"] span:nth-child(2) { top: 22px; transform: rotate(-45deg); }
+        .menu {
+            position: fixed; inset: 0; z-index: 90;
+            padding: calc(var(--nav-h) + 20px) 32px 32px;
+            background: rgba(251, 251, 253, .97);
+            -webkit-backdrop-filter: blur(24px); backdrop-filter: blur(24px);
+            overflow-y: auto;
+        }
+        .menu a { display: block; padding: 14px 0; font-size: 30px; font-weight: 600; letter-spacing: -.035em; border-bottom: 1px solid var(--line); }
+
+        /* ---------- hero ---------- */
+        .hero {
+            position: relative; overflow: hidden;
+            padding: calc(var(--nav-h) + clamp(40px, 9vh, 96px)) 0 clamp(48px, 7vw, 88px);
+            text-align: center;
+        }
+        .hero::before {
+            content: ""; position: absolute; inset: 0; z-index: 0; pointer-events: none;
+            background: radial-gradient(44% 30% at 50% 70%, rgba(41, 151, 255, .16), transparent);
+        }
+        .hero-copy { position: relative; z-index: 2; max-width: 980px; margin-inline: auto; padding-inline: var(--gutter); }
+        .hero-copy .display { margin-top: 10px; }
+        .hero-copy .lede { max-width: 760px; margin: 22px auto 0; }
+        .hero-copy .cta-row { margin-top: 30px; }
+
+        /* Isometric "defense in depth" plates. Pure SVG; the float is CSS and stops for reduced motion. */
+        .layers { position: relative; z-index: 1; width: min(680px, 100% - 2 * var(--gutter)); margin: clamp(28px, 5vw, 56px) auto 0; }
+        .layers svg { width: 100%; height: auto; overflow: visible; }
+        .layers .lbl { font: 600 15px var(--font); letter-spacing: -.01em; fill: var(--ink); }
+        .layers .lbl-sub { font: 500 12.5px var(--font); fill: var(--ink-3); }
+        .layers .lead { stroke: rgba(0, 0, 0, .22); stroke-width: 1; stroke-dasharray: 3 4; }
+        .layers-legend { display: none; gap: 6px; margin-top: 18px; text-align: left; width: max-content; max-width: 100%; margin-inline: auto; }
+        .layers-legend li { display: flex; align-items: center; gap: 8px; font-size: 14px; color: var(--ink-3); }
+        .layers-legend b { color: var(--ink); font-weight: 600; }
+        .layers-legend i { width: 12px; height: 12px; border-radius: 4px; flex: none; }
+        @media (prefers-reduced-motion: no-preference) {
+            .plate { animation: float 7s var(--ease) infinite alternate; }
+            .plate.p1 { --dy: -10px; }
+            .plate.p2 { --dy: -4px; animation-delay: -1.2s; }
+            .plate.p3 { --dy: 4px; animation-delay: -2.4s; }
+            .pulse { animation: pulse 2.8s ease-in-out infinite; }
+            .pulse:nth-of-type(2) { animation-delay: -.9s; }
+            .pulse:nth-of-type(3) { animation-delay: -1.8s; }
+        }
+        @keyframes float { to { transform: translateY(var(--dy, 0)); } }
+        @keyframes pulse { 50% { opacity: .35; } }
+
+        .stats {
+            position: relative; z-index: 2;
+            display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px;
+            margin-top: clamp(28px, 5vw, 56px);
+        }
+        .stat { padding: 22px 16px; border-radius: 24px; background: rgba(255, 255, 255, .7); box-shadow: 0 0 0 1px rgba(0, 0, 0, .05); }
+        .stat-figure { font-size: clamp(32px, 3.4vw, 48px); line-height: 1; font-weight: 700; letter-spacing: -.045em; }
+        .stat p:last-child { margin-top: 8px; font-size: 14px; line-height: 1.35; color: var(--ink-3); }
+
+        /* ---------- overview ---------- */
+        .statement { padding: clamp(80px, 12vw, 168px) 0 clamp(72px, 10vw, 140px); background: var(--bg); }
+        .scrub {
+            margin-top: 18px; max-width: 1000px;
+            font-size: clamp(28px, 4.7vw, 58px); line-height: 1.12; font-weight: 700; letter-spacing: -.038em;
+        }
+        .js .scrub .w { opacity: .2; transition: opacity .4s linear; }
+        .js .scrub .w.on { opacity: 1; }
+        .domains { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: clamp(44px, 6vw, 80px); }
+        .domain { background: var(--bg-2); border-radius: 28px; padding: 32px; display: flex; flex-direction: column; min-height: 320px; }
+        .domain .icon { width: 34px; height: 34px; color: var(--blue); }
+        .domain h3 { margin-top: 56px; font-size: 22px; line-height: 1.2; font-weight: 600; letter-spacing: -.025em; }
+        .domain p { margin-top: 10px; font-size: 16px; line-height: 1.45; color: var(--ink-3); }
+
+        /* ---------- firewall platforms (dark) ---------- */
+        .platforms {
+            color: var(--on-dark); padding: clamp(80px, 11vw, 150px) 0;
+            background: radial-gradient(50% 40% at 18% 30%, rgba(48, 92, 255, .2), transparent 72%), #000;
+        }
+        .platforms .eyebrow, .platforms .lede { color: var(--on-dark-2); }
+        .plat-grid { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: clamp(32px, 6vw, 96px); align-items: start; }
+        .plat-head { position: sticky; top: calc(var(--nav-h) + 48px); }
+        .plat-head .section-title { margin-top: 8px; }
+        .plat-head .lede { margin-top: 18px; max-width: 460px; }
+        .plat-index { margin-top: 36px; display: grid; gap: 4px; }
+        .plat-index a {
+            display: flex; align-items: center; gap: 12px; padding: 10px 0;
+            font-size: 17px; font-weight: 600; letter-spacing: -.02em; color: var(--on-dark-2);
+            border-top: 1px solid rgba(255, 255, 255, .1);
+            transition: color .35s var(--ease);
+        }
+        .plat-index a b {
+            font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 999px;
+            background: rgba(255, 255, 255, .1); color: var(--on-dark); transition: background .35s, color .35s;
+        }
+        .plat-index a:hover, .plat-index a.is-active { color: var(--on-dark); }
+        .plat-index a.is-active b { background: #f5f5f7; color: #000; }
+        .plat-cards { display: grid; gap: 16px; }
+        .plat {
+            background: #111113; border: 1px solid rgba(255, 255, 255, .08); border-radius: 28px;
+            padding: clamp(26px, 3vw, 36px); scroll-margin-top: calc(var(--nav-h) + 24px);
+            transition: border-color .5s var(--ease), background .5s var(--ease);
+        }
+        .plat.is-active { border-color: rgba(41, 151, 255, .45); background: #131318; }
+        .plat-kicker { display: flex; align-items: center; gap: 10px; font-size: 14px; font-weight: 600; letter-spacing: -.01em; color: var(--on-dark-2); }
+        .plat-kicker span { font-size: 12px; padding: 2px 8px; border-radius: 999px; background: rgba(255, 255, 255, .1); color: var(--on-dark); }
+        .plat h3 { margin-top: 14px; font-size: clamp(24px, 2.6vw, 34px); line-height: 1.1; font-weight: 700; letter-spacing: -.035em; }
+        .plat > p:not(.plat-kicker) { margin-top: 12px; font-size: 17px; line-height: 1.5; color: var(--on-dark-2); }
+        .plat-points { margin-top: 16px; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); column-gap: 24px; }
+        .plat-points li { padding: 9px 0; border-top: 1px solid rgba(255, 255, 255, .1); font-size: 15px; line-height: 1.35; color: var(--on-dark); }
+        .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px; }
+        .chips li {
+            font-size: 12px; font-weight: 500; letter-spacing: -.005em;
+            padding: 5px 11px; border-radius: 999px; color: var(--on-dark); background: rgba(255, 255, 255, .09);
+        }
+        .badge-new {
+            margin-left: auto; font-size: 11px; font-weight: 600; letter-spacing: .02em;
+            padding: 3px 9px; border-radius: 999px; color: #000; background-image: var(--grad);
+        }
+
+        /* ---------- experience ---------- */
+        .work { background: var(--bg-2); padding-top: clamp(72px, 10vw, 128px); }
+        .work-head { text-align: center; }
+        .work-head .section-title { margin-top: 8px; }
+        .work-head .lede { max-width: 820px; margin: 18px auto 0; font-size: clamp(17px, 1vw + 11px, 22px); }
+        .tabs-bar {
+            display: none;
+            position: sticky; top: var(--nav-h); z-index: 50; margin-top: clamp(32px, 5vw, 56px); padding: 12px 0;
+            background: rgba(245, 245, 247, .78);
+            -webkit-backdrop-filter: saturate(180%) blur(20px); backdrop-filter: saturate(180%) blur(20px);
+            transition: box-shadow .3s;
+        }
+        .js .tabs-bar { display: block; }
+        .tabs-bar.stuck { box-shadow: 0 1px 0 var(--line); }
+        .seg {
+            position: relative; display: flex; gap: 2px; padding: 4px; width: max-content; max-width: 100%; margin-inline: auto;
+            background: rgba(0, 0, 0, .06); border-radius: 999px;
+            overflow-x: auto; scrollbar-width: none;
+        }
+        .seg::-webkit-scrollbar { display: none; }
+        .seg-tab {
+            position: relative; z-index: 1; display: flex; flex-direction: column; align-items: center;
+            padding: 7px 18px; border-radius: 999px; white-space: nowrap;
+            font-size: 14px; font-weight: 600; letter-spacing: -.01em; color: var(--ink-2); line-height: 1.2;
+            transition: color .25s;
+        }
+        .seg-tab small { font-size: 11px; font-weight: 500; color: var(--ink-3); }
+        .seg-tab:hover, .seg-tab[aria-selected="true"] { color: var(--ink); }
+        .seg-thumb {
+            position: absolute; top: 4px; bottom: 4px; left: 0; width: 0; border-radius: 999px; background: #fff;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, .14), 0 0 0 .5px rgba(0, 0, 0, .05);
+            transition: transform .5s var(--ease), width .5s var(--ease);
+        }
+        .no-thumb-anim .seg-thumb { transition: none; }
+        .work-body { padding-block: 28px clamp(72px, 10vw, 128px); display: grid; gap: 16px; }
+        .js .work-body { display: block; }
+        .role {
+            display: grid; grid-template-columns: minmax(0, 4fr) minmax(0, 8fr); gap: clamp(24px, 4vw, 56px);
+            background: #fff; border-radius: 28px; padding: clamp(26px, 4vw, 48px);
+            box-shadow: 0 0 0 1px rgba(0, 0, 0, .04);
+        }
+        .js .role.enter { animation: rise .55s var(--ease) both; }
+        .role-when { font-size: 14px; font-weight: 600; color: var(--blue); letter-spacing: -.005em; }
+        .role-meta h3 { margin-top: 10px; font-size: clamp(24px, 2.4vw, 32px); line-height: 1.12; font-weight: 700; letter-spacing: -.035em; }
+        .role-org { margin-top: 8px; font-size: 18px; font-weight: 600; color: var(--ink-2); letter-spacing: -.02em; }
+        .role-client { margin-top: 2px; font-size: 15px; color: var(--ink-3); }
+        .role-summary { margin-top: 18px; font-size: 16px; line-height: 1.5; color: var(--ink-3); }
+        .role-points li {
+            position: relative; padding: 12px 0 12px 30px; border-top: 1px solid var(--line);
+            font-size: 16px; line-height: 1.45; color: var(--ink-2);
+        }
+        .role-points li:first-child { border-top: 0; padding-top: 0; }
+        .role-points li::before {
+            content: ""; position: absolute; left: 4px; top: 19px; width: 10px; height: 5px;
+            border-left: 2px solid var(--blue); border-bottom: 2px solid var(--blue); transform: rotate(-45deg);
+        }
+        .role-points li:first-child::before { top: 7px; }
+        .role-points strong { color: var(--ink); font-weight: 600; }
+        .role .tags { margin-top: 22px; }
+        .early { display: grid; gap: 0; }
+        .early-item { padding: 18px 0; border-top: 1px solid var(--line); }
+        .early-item:first-child { border-top: 0; padding-top: 0; }
+        .early-item h4 { margin: 0; font-size: 18px; font-weight: 600; letter-spacing: -.02em; }
+        .early-item .role-when { display: block; margin-top: 2px; font-weight: 500; color: var(--ink-3); }
+        .early-item p { margin-top: 8px; font-size: 15px; line-height: 1.5; color: var(--ink-2); }
+
+        /* ---------- stack ---------- */
+        .stack { background: var(--bg); padding: clamp(80px, 12vw, 168px) 0; }
+        .stack-grid { display: grid; grid-template-columns: minmax(0, 4fr) minmax(0, 8fr); gap: clamp(32px, 6vw, 96px); align-items: start; }
+        .stack .lede { margin-top: 20px; }
+        .stack-cols { display: grid; grid-template-columns: repeat(2, 1fr); gap: 40px 32px; }
+        .stack-cols h3 { font-size: 13px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--ink-3); margin-bottom: 8px; }
+        .stack-cols li {
+            padding: 14px 0; border-top: 1px solid var(--line);
+            font-size: clamp(18px, 1.5vw, 21px); font-weight: 600; letter-spacing: -.03em; line-height: 1.2;
+        }
+        .stack-cols li span { display: block; margin-top: 4px; font-size: 14px; font-weight: 500; letter-spacing: -.01em; color: var(--ink-3); }
+
+        /* ---------- certifications (dark) ---------- */
+        .certs { background: #0b0b0d; color: var(--on-dark); padding: clamp(80px, 12vw, 168px) 0; }
+        .certs .lede { color: var(--on-dark-2); text-align: center; max-width: 720px; margin: 18px auto 0; }
+        .awards { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-top: clamp(40px, 6vw, 72px); }
+        .award { padding: 30px 26px; border-radius: 28px; background: rgba(255, 255, 255, .04); border: 1px solid rgba(255, 255, 255, .08); display: flex; flex-direction: column; }
+        .award-figure {
+            font-size: clamp(26px, 2.2vw, 34px); line-height: 1.1; font-weight: 700; letter-spacing: -.045em; white-space: nowrap;
+            background-image: var(--grad); -webkit-background-clip: text; background-clip: text;
+            -webkit-text-fill-color: transparent; color: transparent;
+        }
+        .award h3 { margin-top: 24px; font-size: 18px; line-height: 1.25; font-weight: 600; letter-spacing: -.02em; }
+        .award p:not(.award-figure) { margin-top: 8px; font-size: 14px; line-height: 1.5; color: var(--on-dark-2); }
+        .award .year { margin-top: auto; padding-top: 18px; font-size: 13px; font-weight: 600; color: var(--on-dark-2); }
+        .award.feature { grid-column: span 2; background: linear-gradient(135deg, rgba(41, 151, 255, .14), rgba(191, 90, 242, .1)); }
+        .edu {
+            grid-column: span 3; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px 32px;
+            padding: 28px; border-radius: 28px; border: 1px solid rgba(255, 255, 255, .08);
+            background: linear-gradient(135deg, rgba(41, 151, 255, .14), rgba(191, 90, 242, .1));
+        }
+        .edu h3 { font-size: 20px; font-weight: 600; letter-spacing: -.025em; }
+        .edu p { margin-top: 4px; font-size: 15px; color: var(--on-dark-2); }
+        .edu .chips { margin-top: 0; }
+
+        /* ---------- contact + footer ---------- */
+        .contact { background: var(--bg); padding: clamp(96px, 16vw, 220px) 0; text-align: center; }
+        .contact .lede { margin-top: 18px; }
+        .contact .cta-row { margin-top: 32px; }
+        .contact-meta { margin-top: 28px; display: flex; flex-wrap: wrap; justify-content: center; gap: 8px 24px; font-size: 15px; color: var(--ink-3); }
+        .contact-meta li { display: inline-flex; align-items: center; gap: 6px; }
+        .contact-meta .icon { width: 16px; height: 16px; }
+        .footer { background: var(--bg-2); color: var(--ink-3); font-size: 12px; line-height: 1.5; border-top: 1px solid var(--line); }
+        .footer .wrap { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px 32px; padding: 22px 0 calc(26px + env(safe-area-inset-bottom)); }
+        .footer ul { display: flex; flex-wrap: wrap; gap: 8px 22px; }
+        .footer a:hover { color: var(--ink); text-decoration: underline; text-underline-offset: 3px; }
+        .to-top {
+            position: fixed; right: 22px; bottom: calc(22px + env(safe-area-inset-bottom)); z-index: 80;
+            width: 44px; height: 44px; display: grid; place-items: center; border-radius: 50%;
+            background: rgba(29, 29, 31, .78); color: #fff;
+            -webkit-backdrop-filter: blur(14px); backdrop-filter: blur(14px);
+            opacity: 0; transform: translateY(10px); pointer-events: none; visibility: hidden;
+            transition: opacity .35s var(--ease), transform .35s var(--ease), background .25s, visibility 0s linear .35s;
+        }
+        .to-top.visible { opacity: 1; transform: none; pointer-events: auto; visibility: visible; transition-delay: 0s; }
+        .to-top:hover { background: #000; }
+
+        /* No script: tabs and hamburger would be dead controls. All roles render stacked instead. */
+        html:not(.js) .menu-btn { display: none; }
+
+        /* ---------- responsive ---------- */
+        @media (max-width: 1068px) {
+            .domains { grid-template-columns: repeat(2, 1fr); }
+            .domains .domain:last-child { grid-column: 1 / -1; min-height: 0; }
+            .awards { grid-template-columns: repeat(2, 1fr); }
+            .edu { grid-column: 1 / -1; }
+            .stack-grid { grid-template-columns: 1fr; }
+            .stats { grid-template-columns: repeat(2, 1fr); }
+        }
+        @media (max-width: 900px) {
+            .gnav-links, .gnav-cta { display: none; }
+            .js .menu-btn { display: block; margin-left: auto; }
+            html:not(.js) .gnav { position: static; height: auto; }
+            html:not(.js) .gnav .wrap { flex-wrap: wrap; padding-block: 6px; gap: 0 24px; }
+            html:not(.js) .gnav-links { display: flex; flex-wrap: wrap; gap: 0 20px; margin-left: 0; }
+            html:not(.js) .gnav-links a { display: block; padding: 8px 0; }
+            .plat-grid { grid-template-columns: 1fr; }
+            .plat-head { position: static; }
+            .plat-index { display: none; }
+            .role { grid-template-columns: 1fr; }
+        }
+        @media (max-width: 734px) {
+            :root { --gutter: 20px; }
+            body { font-size: 16px; }
+            .domains, .awards, .stack-cols { grid-template-columns: 1fr; }
+            .award.feature { grid-column: auto; }
+            .domain { min-height: 0; }
+            .domain h3 { margin-top: 36px; }
+            .tabs-bar .wrap { width: 100%; padding-inline: 12px; }
+            .seg { margin-inline: 0; }
+            .layers svg { width: 116%; margin-left: -1%; }
+            .layers .lbl, .layers .lbl-sub, .layers .lead { display: none; }
+            .layers-legend { display: grid; }
+        }
+        @media (max-width: 420px) {
+            .stats { gap: 10px; }
+            .stat { padding: 18px 12px; }
+        }
+
+        @media (forced-colors: active) {
+            .seg-thumb { display: none; }
+            .seg-tab[aria-selected="true"] { outline: 2px solid Highlight; outline-offset: -2px; }
+            .btn { border: 1px solid ButtonText; }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            html { scroll-behavior: auto; }
+            *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; }
+            .js [data-reveal] { opacity: 1; transform: none; }
+            .js .scrub .w { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <a class="skip" href="#main">Skip to content</a>
+
+    <!-- Icon sprite: no icon-font or CDN request. -->
+    <svg class="sprite" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+        <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 4.5-3.2 8.2-8 9-4.8-.8-8-4.5-8-9V6l8-3z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></symbol>
+        <symbol id="i-cloud" viewBox="0 0 24 24"><path d="M7 18a4 4 0 0 1-.6-7.96A5.5 5.5 0 0 1 17 8.6 4.7 4.7 0 0 1 17 18H7z"/></symbol>
+        <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.2"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><circle cx="17" cy="9" r="2.4"/><path d="M16.5 14.2c2.6.2 4.5 2.4 4.5 5.8"/></symbol>
+        <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0c0 5.4-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.3"/></symbol>
+        <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3.5 6.5L12 13l8.5-6.5"/></symbol>
+        <symbol id="i-up" viewBox="0 0 24 24"><path d="M12 19V5M5.5 11.5L12 5l6.5 6.5"/></symbol>
+    </svg>
+
+    <header class="gnav" id="gnav">
+        <div class="wrap">
+            <a class="brand" href="#top" aria-label="Gaurav Khanna, back to top"><svg class="icon" aria-hidden="true"><use href="#i-shield"/></svg>Gaurav Khanna</a>
+            <nav aria-label="Primary">
+                <ul class="gnav-links">
+                    <li><a href="#overview">Overview</a></li>
+                    <li><a href="#platforms">Platforms</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#stack">Stack</a></li>
+                    <li><a href="#certifications">Certifications</a></li>
+                </ul>
+            </nav>
+            <a class="gnav-cta" href="mailto:grvkhanna06@gmail.com">Contact</a>
+            <button class="menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="menu" aria-label="Menu">
+                <span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <div class="menu" id="menu" hidden>
+        <nav aria-label="Mobile">
+            <ul>
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#platforms">Platforms</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#stack">Stack</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="mailto:grvkhanna06@gmail.com">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main id="main">
+
+        <!-- ============================ HERO ============================ -->
+        <section class="hero" id="top" aria-labelledby="hero-title">
+            <div class="hero-copy">
+                <p class="eyebrow grad" data-reveal>Lead Security Engineer, Network &amp; Cloud Security</p>
+                <h1 class="display" id="hero-title" data-reveal style="--i:1">Gaurav <span class="grad">Khanna</span></h1>
+                <p class="lede" data-reveal style="--i:2">
+                    Security lead with 13+ years across enterprise networks, next-generation firewalls and cloud infrastructure.
+                    I design zero-trust architectures on <strong>Palo Alto, Prisma Access, Check Point and Azure</strong>,
+                    and run the global operations that keep them secure, available and fast.
+                </p>
+                <div class="cta-row" data-reveal style="--i:3">
+                    <a class="btn" href="mailto:grvkhanna06@gmail.com">Contact now</a>
+                    <a class="link-arrow" href="https://www.linkedin.com/in/gaurav-khanna-158093118/" target="_blank" rel="noopener">LinkedIn profile</a>
+                </div>
+            </div>
+
+            <figure class="layers" data-reveal style="--i:4" aria-hidden="true">
+                <svg viewBox="0 0 680 400" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="gTop" x1="0" y1="0" x2="1" y2="1">
+                            <stop offset="0" stop-color="#2997ff"/><stop offset=".55" stop-color="#5e5ce6"/><stop offset="1" stop-color="#bf5af2"/>
+                        </linearGradient>
+                        <linearGradient id="gTopSide" x1="0" x2="1">
+                            <stop offset="0" stop-color="#1f6fd1"/><stop offset="1" stop-color="#7a3fb8"/>
+                        </linearGradient>
+                        <linearGradient id="gGlass" x1="0" y1="0" x2="1" y2="1">
+                            <stop offset="0" stop-color="#ffffff" stop-opacity=".9"/><stop offset="1" stop-color="#cfe2ff" stop-opacity=".55"/>
+                        </linearGradient>
+                        <linearGradient id="gMetal" x1="0" y1="0" x2="1" y2="1">
+                            <stop offset="0" stop-color="#eceef2"/><stop offset=".52" stop-color="#c3c6ce"/><stop offset="1" stop-color="#e4e6eb"/>
+                        </linearGradient>
+                        <filter id="fShadow" x="-20%" y="-20%" width="140%" height="160%">
+                            <feDropShadow dx="0" dy="14" stdDeviation="12" flood-color="#1d3f8f" flood-opacity=".22"/>
+                        </filter>
+                    </defs>
+
+                    <!-- bottom: cloud workloads -->
+                    <g class="plate p3" filter="url(#fShadow)">
+                        <polygon points="110,290 290,380 290,394 110,304" fill="#a9adb7"/>
+                        <polygon points="290,380 470,290 470,304 290,394" fill="#b9bdc6"/>
+                        <polygon points="110,290 290,200 470,290 290,380" fill="url(#gMetal)" stroke="#fff" stroke-opacity=".7"/>
+                        <g fill="#0071e3" fill-opacity=".75">
+                            <ellipse class="pulse" cx="230" cy="290" rx="9" ry="4.5"/>
+                            <ellipse class="pulse" cx="290" cy="320" rx="9" ry="4.5"/>
+                            <ellipse class="pulse" cx="350" cy="290" rx="9" ry="4.5"/>
+                        </g>
+                        <path d="M230 290L290 320L350 290L290 260Z" fill="none" stroke="#0071e3" stroke-opacity=".35" stroke-dasharray="4 4"/>
+                    </g>
+                    <!-- middle: SASE / zero trust -->
+                    <g class="plate p2">
+                        <polygon points="110,200 290,290 290,300 110,210" fill="#bcd4f5" fill-opacity=".8"/>
+                        <polygon points="290,290 470,200 470,210 290,300" fill="#d4e3f8" fill-opacity=".8"/>
+                        <polygon points="110,200 290,110 470,200 290,290" fill="url(#gGlass)" stroke="#fff"/>
+                        <path d="M155 177.5L335 267.5M200 155L380 245M245 132.5L425 222.5M200 245L380 155M155 222.5L335 132.5M245 267.5L425 177.5" stroke="#5e5ce6" stroke-opacity=".16"/>
+                    </g>
+                    <!-- top: perimeter NGFW -->
+                    <g class="plate p1" filter="url(#fShadow)">
+                        <polygon points="110,110 290,200 290,214 110,124" fill="url(#gTopSide)"/>
+                        <polygon points="290,200 470,110 470,124 290,214" fill="#6d48c9"/>
+                        <polygon points="110,110 290,20 470,110 290,200" fill="url(#gTop)"/>
+                        <!-- shield laid flat on the plate -->
+                        <g transform="translate(290 112) scale(1.25 .62)">
+                            <path d="M0-46l34 13v26C34 13 20 30 0 34-20 30-34 13-34-7v-26z" fill="#fff" fill-opacity=".22" stroke="#fff" stroke-opacity=".8" stroke-width="2"/>
+                            <path d="M-13 -4l9 9 17-18" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                        </g>
+                    </g>
+
+                    <line class="lead" x1="474" y1="110" x2="508" y2="110"/>
+                    <text class="lbl" x="516" y="106">Perimeter</text>
+                    <text class="lbl-sub" x="516" y="124">Palo Alto · Check Point</text>
+                    <line class="lead" x1="474" y1="200" x2="508" y2="200"/>
+                    <text class="lbl" x="516" y="196">Zero trust edge</text>
+                    <text class="lbl-sub" x="516" y="214">Prisma Access · CASB</text>
+                    <line class="lead" x1="474" y1="290" x2="508" y2="290"/>
+                    <text class="lbl" x="516" y="286">Cloud workloads</text>
+                    <text class="lbl-sub" x="516" y="304">Azure · AWS</text>
+                </svg>
+                <ul class="layers-legend">
+                    <li><i style="background-image:var(--grad)"></i><b>Perimeter</b> Palo Alto · Check Point</li>
+                    <li><i style="background:#cfe2ff"></i><b>Zero trust edge</b> Prisma Access · CASB</li>
+                    <li><i style="background:#c3c6ce"></i><b>Cloud workloads</b> Azure · AWS</li>
+                </ul>
+            </figure>
+
+            <div class="wrap">
+                <div class="stats">
+                    <div class="stat" data-reveal>
+                        <p class="stat-figure grad"><span data-count="13">13</span>+</p>
+                        <p>Years in network &amp; security engineering</p>
+                    </div>
+                    <div class="stat" data-reveal style="--i:1">
+                        <p class="stat-figure grad"><span data-count="5000">5,000</span></p>
+                        <p>Users secured on Prisma Access</p>
+                    </div>
+                    <div class="stat" data-reveal style="--i:2">
+                        <p class="stat-figure grad"><span data-count="8">8</span></p>
+                        <p>Industry certifications, incl. CISM &amp; PCNSE</p>
+                    </div>
+                    <div class="stat" data-reveal style="--i:3">
+                        <p class="stat-figure grad"><span data-count="3">3</span></p>
+                        <p>Regions supported: Canada, US, Europe</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================== OVERVIEW ========================== -->
+        <section class="statement" id="overview" aria-labelledby="overview-title">
+            <div class="wrap">
+                <p class="eyebrow" data-reveal>Core security domains</p>
+                <h2 class="scrub" id="overview-title" data-scrub>Thirteen years securing the paths between users, data centres and the cloud, from ISP backbones and Palo Alto TAC escalations to enterprise-wide zero trust.</h2>
+                <div class="domains">
+                    <article class="domain" data-reveal>
+                        <svg class="icon" aria-hidden="true"><use href="#i-shield"/></svg>
+                        <h3>Network Security</h3>
+                        <p>Next-generation firewall design and operations across Palo Alto, Check Point and Cisco: high availability, decryption, NAT, site-to-site and remote access VPN, Threat Prevention and URL filtering.</p>
+                    </article>
+                    <article class="domain" data-reveal style="--i:1">
+                        <svg class="icon" aria-hidden="true"><use href="#i-cloud"/></svg>
+                        <h3>Cloud &amp; Zero Trust</h3>
+                        <p>Secure hybrid architectures on Azure and AWS: VNets, ExpressRoute, VPN Gateway, NSGs and UDRs, with Prisma Access, Prisma CASB, Netskope and Guardicore enforcing zero-trust access.</p>
+                    </article>
+                    <article class="domain" data-reveal style="--i:2">
+                        <svg class="icon" aria-hidden="true"><use href="#i-users"/></svg>
+                        <h3>Security Leadership</h3>
+                        <p>CISM-certified lead owning architecture, standards and documentation, running change, incident and problem management, and mentoring the analysts who operate the estate day to day.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ====================== FIREWALL PLATFORMS ====================== -->
+        <section class="platforms dark" id="platforms" aria-labelledby="platforms-title">
+            <div class="wrap plat-grid">
+                <div class="plat-head">
+                    <p class="eyebrow" data-reveal>Firewall &amp; security platforms</p>
+                    <h2 class="section-title" id="platforms-title" data-reveal style="--i:1">Defense at <span class="grad">every edge.</span></h2>
+                    <p class="lede" data-reveal style="--i:2">The perimeter is no longer one place. These are the platforms I design, deploy and troubleshoot to secure it.</p>
+                    <nav class="plat-index" aria-label="Platforms" data-reveal style="--i:3">
+                        <a href="#plat-paloalto" data-plat="0"><b>01</b> Palo Alto Networks</a>
+                        <a href="#plat-prisma" data-plat="1"><b>02</b> Prisma Access &amp; SASE</a>
+                        <a href="#plat-checkpoint" data-plat="2"><b>03</b> Check Point</a>
+                        <a href="#plat-appsec" data-plat="3"><b>04</b> WAF, ADC &amp; segmentation</a>
+                    </nav>
+                </div>
+
+                <div class="plat-cards">
+                    <article class="plat" id="plat-paloalto" data-reveal>
+                        <p class="plat-kicker"><span>01</span> Palo Alto Networks</p>
+                        <h3>From the TAC desk to the architecture board.</h3>
+                        <p>Two years inside Palo Alto TAC resolving escalations for customers worldwide, then six more designing and running Palo Alto estates for PwC, Dream and Maple Leaf Foods.</p>
+                        <ul class="plat-points">
+                            <li>NGFW high availability, routing and NAT</li>
+                            <li>SSL forward-proxy decryption</li>
+                            <li>User-ID and application overrides</li>
+                            <li>Panorama centralised management and logging</li>
+                            <li>GlobalProtect and IPsec site-to-site VPN</li>
+                            <li>Threat Prevention, WildFire, URL Filtering</li>
+                        </ul>
+                        <ul class="chips"><li>PCNSE</li><li>Panorama</li><li>Strata Cloud Manager</li><li>GlobalProtect</li></ul>
+                    </article>
+
+                    <article class="plat" id="plat-prisma" data-reveal>
+                        <p class="plat-kicker"><span>02</span> Prisma Access &amp; SASE</p>
+                        <h3>5,000 users, one secure edge.</h3>
+                        <p>Runs a 5,000-user Prisma Access deployment at Maple Leaf Foods, planning capacity and configuration for secure, scalable connectivity, and administers Prisma CASB to keep data inside policy.</p>
+                        <ul class="plat-points">
+                            <li>Prisma Access for remote and branch users</li>
+                            <li>Prisma CASB data protection policies</li>
+                            <li>Zero trust with Azure AD and Prisma Cloud Identity</li>
+                            <li>Netskope and Guardicore policy deployment</li>
+                        </ul>
+                        <ul class="chips"><li>SASE</li><li>CASB</li><li>Zero Trust</li><li>Azure AD</li></ul>
+                    </article>
+
+                    <article class="plat" id="plat-checkpoint" data-reveal>
+                        <p class="plat-kicker"><span>03</span> Check Point</p>
+                        <h3>Multi-vendor by design.</h3>
+                        <p>Hands-on familiarity with Check Point firewall devices and their centralised management, applying the same policy standards used on Palo Alto so mixed-vendor estates stay consistent and auditable.</p>
+                        <ul class="plat-points">
+                            <li>Check Point Security Gateways</li>
+                            <li>Access control policy and NAT rules</li>
+                            <li>Site-to-site VPN between gateways</li>
+                            <li>Threat Prevention blades</li>
+                        </ul>
+                        <ul class="chips"><li>Security Gateways</li><li>SmartConsole</li><li>Policy &amp; NAT</li><li>Site-to-Site VPN</li></ul>
+                    </article>
+
+                    <article class="plat" id="plat-appsec" data-reveal>
+                        <p class="plat-kicker"><span>04</span> WAF, ADC &amp; segmentation</p>
+                        <h3>Protecting the application layer.</h3>
+                        <p>Imperva WAF consulting at PwC, F5 virtual servers and certificates at Maple Leaf Foods, and microsegmentation that limits how far an intruder can move.</p>
+                        <ul class="plat-points">
+                            <li>Imperva WAF onboarding and policies</li>
+                            <li>HTTPS redirection and SSL certificates</li>
+                            <li>F5 VIP deployment and troubleshooting</li>
+                            <li>Guardicore microsegmentation</li>
+                        </ul>
+                        <ul class="chips"><li>Imperva</li><li>F5 Load Balancer</li><li>Guardicore</li><li>Tufin</li></ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================= EXPERIENCE ========================= -->
+        <section class="work" id="experience" aria-labelledby="experience-title">
+            <div class="wrap work-head">
+                <p class="eyebrow" data-reveal>Professional experience</p>
+                <h2 class="section-title" id="experience-title" data-reveal style="--i:1">13+ Years in the Path of Traffic</h2>
+                <p class="lede" data-reveal style="--i:2">From provisioning ISP links and Palo Alto TAC escalations to leading enterprise network, cloud and identity security.</p>
+            </div>
+
+            <div class="tabs-bar" id="tabs-bar">
+                <div class="wrap">
+                    <div class="seg" role="tablist" aria-label="Employers" id="seg">
+                        <span class="seg-thumb" aria-hidden="true"></span>
+                        <button class="seg-tab" type="button" role="tab" id="tab-mlf" aria-selected="true" aria-controls="panel-mlf">Maple Leaf Foods<small>2023 – Present</small></button>
+                        <button class="seg-tab" type="button" role="tab" id="tab-dream" aria-selected="false" aria-controls="panel-dream" tabindex="-1">Dream<small>2023</small></button>
+                        <button class="seg-tab" type="button" role="tab" id="tab-pwc" aria-selected="false" aria-controls="panel-pwc" tabindex="-1">PwC<small>2018 – 2023</small></button>
+                        <button class="seg-tab" type="button" role="tab" id="tab-tac" aria-selected="false" aria-controls="panel-tac" tabindex="-1">Palo Alto TAC<small>2017 – 2018</small></button>
+                        <button class="seg-tab" type="button" role="tab" id="tab-early" aria-selected="false" aria-controls="panel-early" tabindex="-1">Earlier<small>2013 – 2017</small></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="wrap work-body">
+                <article class="role" role="tabpanel" id="panel-mlf" aria-labelledby="tab-mlf" tabindex="0">
+                    <div class="role-meta">
+                        <p class="role-when">Sep 2023 – Present</p>
+                        <h3>Lead Security Engineer, Network &amp; Cloud Security</h3>
+                        <p class="role-org">Maple Leaf Foods</p>
+                        <p class="role-summary">Security lead for enterprise network, cloud, identity and security architecture, managing global network operations through cross-regional collaboration.</p>
+                    </div>
+                    <div>
+                        <ul class="role-points">
+                            <li>Designs secure network architectures for <strong>hybrid and cloud environments</strong> on Palo Alto firewalls, Prisma Access and Prisma CASB, aligned with industry best practice.</li>
+                            <li>Manages a <strong>5,000-user Prisma Access</strong> base, planning configuration for secure, scalable connectivity and a better user experience.</li>
+                            <li>Implements <strong>zero-trust access</strong> using Azure AD, Prisma Cloud Identity and Palo Alto NGFW features.</li>
+                            <li>Leads deployment of Palo Alto devices: HA, decryption, routing, site-to-site VPN and NAT, plus Threat Prevention, URL Filtering, WildFire and Microsoft Defender.</li>
+                            <li>Designs Azure networking: VNets, VPN Gateway, ExpressRoute, NSGs, UDRs, VM firewalls, load balancers and public IPs.</li>
+                            <li>Deploys policy on Guardicore and Netskope; owns F5 VIP builds, troubleshooting and SSL certificate lifecycle.</li>
+                            <li>Standardises policies and documentation across environments, and trains new security analysts.</li>
+                        </ul>
+                        <ul class="tags"><li>Palo Alto NGFW</li><li>Prisma Access</li><li>Prisma CASB</li><li>Azure</li><li>Zero Trust</li><li>Guardicore</li><li>Netskope</li><li>F5</li></ul>
+                    </div>
+                </article>
+
+                <article class="role" role="tabpanel" id="panel-dream" aria-labelledby="tab-dream" tabindex="0">
+                    <div class="role-meta">
+                        <p class="role-when">May 2023 – Sep 2023</p>
+                        <h3>Infrastructure Engineer, Network &amp; Cloud Security</h3>
+                        <p class="role-org">Dream</p>
+                        <p class="role-summary">Supported all corporate and base building network (BBN) infrastructure across Canada, the US and Europe, and ran the company data centre.</p>
+                    </div>
+                    <div>
+                        <ul class="role-points">
+                            <li>Managed and configured <strong>Panorama, Palo Alto firewalls</strong> and Cisco 9000 series switches.</li>
+                            <li>Configured HA, application overrides, decryption, User-ID, routing, URL filtering, site-to-site VPN and NAT policy.</li>
+                            <li>Operated the data centre end to end: network, server, storage, virtualisation and backup for disaster recovery.</li>
+                            <li>Implemented and maintained the BBN supporting <strong>IoT systems</strong> across the property portfolio.</li>
+                            <li>Established network standards, procedures and checklists; resolved incidents within SLA via Remedyforce.</li>
+                        </ul>
+                        <ul class="tags"><li>Panorama</li><li>Palo Alto</li><li>Cisco 9000</li><li>Data Centre</li><li>IoT Networks</li><li>VMware</li></ul>
+                    </div>
+                </article>
+
+                <article class="role" role="tabpanel" id="panel-pwc" aria-labelledby="tab-pwc" tabindex="0">
+                    <div class="role-meta">
+                        <p class="role-when">Dec 2018 – May 2023</p>
+                        <h3>Senior Network &amp; Cloud Security Engineer (Consultant)</h3>
+                        <p class="role-org">PricewaterhouseCoopers (PwC)</p>
+                        <p class="role-summary">Led end-to-end Global Network Infrastructure Security (NIS) services as a Senior L3 consultant and primary technical security point of contact.</p>
+                    </div>
+                    <div>
+                        <ul class="role-points">
+                            <li>Palo Alto and Prisma <strong>subject-matter expert</strong>: security policy, HA, decryption, User-ID, routing, URL filtering and NAT.</li>
+                            <li>Provided governance and oversight of security devices across the <strong>global NIS ecosystem</strong>.</li>
+                            <li>Designed and validated secure data centre solutions aligned with compliance requirements.</li>
+                            <li>Delivered <strong>Imperva WAF</strong> consulting: application onboarding, security policies, HTTPS redirection and SSL certificates.</li>
+                            <li>Consulted on Azure network security and built site-to-site and remote access VPNs for distributed users.</li>
+                            <li>Led change, incident and problem management; performed root-cause analysis and Wireshark deep dives.</li>
+                            <li>Authored security standards and architecture guidelines; mentored security analysts.</li>
+                        </ul>
+                        <ul class="tags"><li>Palo Alto</li><li>Prisma</li><li>Imperva WAF</li><li>Azure</li><li>VPN</li><li>Wireshark</li><li>ITIL</li></ul>
+                    </div>
+                </article>
+
+                <article class="role" role="tabpanel" id="panel-tac" aria-labelledby="tab-tac" tabindex="0">
+                    <div class="role-meta">
+                        <p class="role-when">Jan 2017 – Nov 2018</p>
+                        <h3>Senior Network Security Engineer</h3>
+                        <p class="role-org">CSS Corp</p>
+                        <p class="role-client">Client: Palo Alto Networks TAC</p>
+                        <p class="role-summary">Front-line technical assistance for Palo Alto customers deploying and operating Panorama, Prisma and next-generation firewalls.</p>
+                    </div>
+                    <div>
+                        <ul class="role-points">
+                            <li>Supported deployment, configuration and maintenance of <strong>Panorama, Prisma and Palo Alto NGFWs</strong>.</li>
+                            <li>Resolved <strong>IPsec and GlobalProtect</strong> VPN issues for secure remote access.</li>
+                            <li>Configured firewalls as <strong>SSL forward proxies</strong> for HTTPS decryption and visibility.</li>
+                            <li>Troubleshot Panorama logging between log collectors, firewalls and Syslog servers.</li>
+                            <li>Diagnosed switching and routing faults through Wireshark packet capture analysis.</li>
+                            <li>Wrote root-cause analyses for incidents on Palo Alto devices to prevent recurrence.</li>
+                        </ul>
+                        <ul class="tags"><li>Palo Alto TAC</li><li>Panorama</li><li>GlobalProtect</li><li>SSL Decryption</li><li>Wireshark</li><li>RCA</li></ul>
+                    </div>
+                </article>
+
+                <article class="role" role="tabpanel" id="panel-early" aria-labelledby="tab-early" tabindex="0">
+                    <div class="role-meta">
+                        <p class="role-when">Jan 2013 – Jan 2017</p>
+                        <h3>Network foundations</h3>
+                        <p class="role-org">ISP, telecom and managed networks</p>
+                        <p class="role-summary">Four years in routing, switching and service provider networks that built the foundation for everything since.</p>
+                    </div>
+                    <div class="early">
+                        <div class="early-item">
+                            <h4>Senior Associate, Tata Consultancy Services</h4>
+                            <span class="role-when">Jul 2016 – Jan 2017 · Client: National Broadband Network (Australia)</span>
+                            <p>Network design and planning with PNI, fault diagnosis, copper activation and ISP service delivery for NBN customers.</p>
+                        </div>
+                        <div class="early-item">
+                            <h4>IP Engineer, XecuteHR Solutions</h4>
+                            <span class="role-when">Oct 2015 – Jun 2016 · Client: Bharti Airtel</span>
+                            <p>Provisioned ISP and ILP links on provider edge routers with Meta Solv, configured Cisco and Juniper L2/L3 devices and customer edge routers, and analysed fault logs for root cause.</p>
+                        </div>
+                        <div class="early-item">
+                            <h4>Network Associate, Creatick Solutions</h4>
+                            <span class="role-when">Jan 2013 – Jul 2015</span>
+                            <p>Installed and upgraded Cisco routers and switches, provided L1 monitoring for network security and server infrastructure, and troubleshot DHCP and DNS.</p>
+                        </div>
+                        <ul class="tags"><li>Cisco</li><li>Juniper</li><li>OSPF</li><li>EIGRP</li><li>BGP</li><li>Meta Solv</li><li>Comptel</li></ul>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- ============================ STACK ============================ -->
+        <section class="stack" id="stack" aria-labelledby="stack-title">
+            <div class="wrap stack-grid">
+                <div>
+                    <h2 class="section-title" id="stack-title" data-reveal>Technical <span class="grad">Stack</span></h2>
+                    <p class="lede" data-reveal style="--i:1">Multi-vendor firewalls, SASE and cloud networking, backed by the tooling to see and prove what traffic is doing.</p>
+                </div>
+                <div class="stack-cols">
+                    <div data-reveal>
+                        <h3>Firewalls &amp; SASE</h3>
+                        <ul>
+                            <li>Palo Alto NGFW &amp; Panorama<span>Strata Cloud Manager, GlobalProtect</span></li>
+                            <li>Check Point<span>Security Gateways and management</span></li>
+                            <li>Prisma Access &amp; Prisma CASB</li>
+                            <li>Cisco<span>Routers, switches, Cisco 9000 series</span></li>
+                        </ul>
+                    </div>
+                    <div data-reveal style="--i:1">
+                        <h3>Cloud &amp; Endpoint</h3>
+                        <ul>
+                            <li>Microsoft Azure<span>VNet, ExpressRoute, VPN Gateway, NSG, UDR</span></li>
+                            <li>AWS</li>
+                            <li>Microsoft Defender for Endpoint &amp; SentinelOne</li>
+                            <li>VMware</li>
+                        </ul>
+                    </div>
+                    <div data-reveal>
+                        <h3>Application &amp; Segmentation</h3>
+                        <ul>
+                            <li>Imperva WAF</li>
+                            <li>F5 Load Balancer</li>
+                            <li>Guardicore &amp; Netskope</li>
+                            <li>Networking<span>OSPF, EIGRP, BGP, QoS, IPsec VPN, URL filtering</span></li>
+                        </ul>
+                    </div>
+                    <div data-reveal style="--i:1">
+                        <h3>Visibility &amp; Operations</h3>
+                        <ul>
+                            <li>Splunk &amp; SolarWinds</li>
+                            <li>Wireshark &amp; Tufin</li>
+                            <li>ServiceNow, Jira, BMC Remedyforce</li>
+                            <li>ITIL 4 service management</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================= CERTIFICATIONS ======================= -->
+        <section class="certs dark" id="certifications" aria-labelledby="certs-title">
+            <div class="wrap">
+                <h2 class="section-title center" id="certs-title" data-reveal>Certified Across the <span class="grad">Stack</span></h2>
+                <p class="lede" data-reveal style="--i:1">From management and governance down to the firewall and the packet.</p>
+                <div class="awards">
+                    <article class="award feature" data-reveal>
+                        <p class="award-figure">CISM</p>
+                        <h3>Certified Information Security Manager</h3>
+                        <p>ISACA certification in information security governance, risk management, program development and incident management.</p>
+                        <p class="year">2024</p>
+                    </article>
+                    <article class="award" data-reveal style="--i:1">
+                        <p class="award-figure">PCNSE</p>
+                        <h3>Palo Alto Networks Certified Network Security Engineer</h3>
+                        <p class="year">2019</p>
+                    </article>
+                    <article class="award" data-reveal style="--i:2">
+                        <p class="award-figure">AZ-500</p>
+                        <h3>Azure Security Engineer</h3>
+                        <p class="year">2021</p>
+                    </article>
+                    <article class="award" data-reveal>
+                        <p class="award-figure">CEH</p>
+                        <h3>Certified Ethical Hacker</h3>
+                        <p class="year">2019</p>
+                    </article>
+                    <article class="award" data-reveal style="--i:1">
+                        <p class="award-figure">AZ-104</p>
+                        <h3>Azure Administrator</h3>
+                        <p class="year">2021</p>
+                    </article>
+                    <article class="award" data-reveal style="--i:2">
+                        <p class="award-figure">AZ-900</p>
+                        <h3>Azure Fundamentals</h3>
+                        <p class="year">2021</p>
+                    </article>
+                    <article class="award" data-reveal style="--i:3">
+                        <p class="award-figure">ITIL 4</p>
+                        <h3>IT Service Management</h3>
+                        <p class="year">2021</p>
+                    </article>
+                    <article class="award" data-reveal>
+                        <p class="award-figure">CCNA</p>
+                        <h3>Cisco Certified Network Associate</h3>
+                        <p class="year">2013</p>
+                    </article>
+                    <div class="edu" data-reveal style="--i:1">
+                        <div>
+                            <h3>Bachelor of Engineering &amp; Technology, Information Technology</h3>
+                            <p>Lovely Institute of Technology (PTU), Phagwara · 2011</p>
+                        </div>
+                        <ul class="chips"><li>Verified by WES</li></ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================ CONTACT ============================ -->
+        <section class="contact" id="contact" aria-labelledby="contact-title">
+            <div class="wrap">
+                <h2 class="display sm" id="contact-title" data-reveal>Get in <span class="grad">touch.</span></h2>
+                <p class="lede" data-reveal style="--i:1">Network security, cloud security, zero-trust architecture.</p>
+                <div class="cta-row" data-reveal style="--i:2">
+                    <a class="btn" href="mailto:grvkhanna06@gmail.com">Contact now</a>
+                    <a class="link-arrow" href="https://www.linkedin.com/in/gaurav-khanna-158093118/" target="_blank" rel="noopener">LinkedIn profile</a>
+                </div>
+                <ul class="contact-meta" data-reveal style="--i:3">
+                    <li><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg>Greater Toronto Area, Canada</li>
+                    <li><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg><a href="mailto:grvkhanna06@gmail.com">grvkhanna06@gmail.com</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="wrap">
+            <p>&copy; <span id="year">2026</span> Gaurav Khanna <span class="dot">|</span> Lead Security Engineer</p>
+            <ul>
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#platforms">Platforms</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#stack">Stack</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <button class="to-top" id="to-top" type="button" aria-label="Back to top">
+        <svg class="icon" aria-hidden="true"><use href="#i-up"/></svg>
+    </button>
+
+    <script>
+        (function () {
+            var root = document.documentElement;
+            var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+            var hasIO = 'IntersectionObserver' in window;
+            var $ = function (s, c) { return (c || document).querySelector(s); };
+            var $$ = function (s, c) { return Array.prototype.slice.call((c || document).querySelectorAll(s)); };
+
+            document.getElementById('year').textContent = new Date().getFullYear();
+
+            /* ---------- reveal on scroll ---------- */
+            var reveals = $$('[data-reveal]');
+            if (hasIO && !reduce) {
+                var rio = new IntersectionObserver(function (entries) {
+                    entries.forEach(function (e) {
+                        if (e.isIntersecting) { e.target.classList.add('in'); rio.unobserve(e.target); }
+                    });
+                }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
+                reveals.forEach(function (el) { rio.observe(el); });
+            } else {
+                reveals.forEach(function (el) { el.classList.add('in'); });
+            }
+
+            /* ---------- count-up stats ---------- */
+            var counters = $$('[data-count]');
+            function runCount(el) {
+                var target = +el.getAttribute('data-count');
+                var start = null, dur = 1400;
+                function step(t) {
+                    if (start === null) start = t;
+                    var k = Math.min(1, (t - start) / dur);
+                    var v = Math.round(target * (1 - Math.pow(1 - k, 3)));
+                    el.textContent = v.toLocaleString('en-US');
+                    if (k < 1) requestAnimationFrame(step);
+                }
+                requestAnimationFrame(step);
+            }
+            if (hasIO && !reduce) {
+                var cio = new IntersectionObserver(function (entries) {
+                    entries.forEach(function (e) {
+                        if (e.isIntersecting) { runCount(e.target); cio.unobserve(e.target); }
+                    });
+                }, { threshold: 0.6 });
+                counters.forEach(function (el) { cio.observe(el); });
+            }
+
+            /* ---------- scrub statement: words light up as it scrolls through ---------- */
+            var scrub = $('[data-scrub]');
+            var words = [];
+            if (scrub) {
+                var text = scrub.textContent.trim();
+                scrub.setAttribute('aria-label', text);
+                scrub.innerHTML = text.split(/\s+/).map(function (w) {
+                    return '<span class="w" aria-hidden="true">' + w + '</span>';
+                }).join(' ');
+                words = $$('.w', scrub);
+            }
+            function updateScrub() {
+                if (!words.length) return;
+                var r = scrub.getBoundingClientRect(), vh = window.innerHeight;
+                var p = (vh * 0.85 - r.top) / (r.height + vh * 0.35);
+                p = Math.max(0, Math.min(1, p));
+                var lit = Math.round(p * words.length);
+                for (var i = 0; i < words.length; i++) words[i].classList.toggle('on', i < lit);
+            }
+
+            /* ---------- nav state, back-to-top, sticky tabs shadow ---------- */
+            var gnav = $('#gnav'), toTop = $('#to-top'), tabsBar = $('#tabs-bar');
+            var darks = $$('.dark');
+            function updateChrome() {
+                var y = window.scrollY;
+                gnav.classList.toggle('scrolled', y > 8);
+                var mid = 24, onDark = false;
+                darks.forEach(function (d) {
+                    var r = d.getBoundingClientRect();
+                    if (r.top <= mid && r.bottom >= mid) onDark = true;
+                });
+                gnav.classList.toggle('on-dark', onDark);
+                toTop.classList.toggle('visible', y > window.innerHeight * 1.2);
+                if (tabsBar) {
+                    var tb = tabsBar.getBoundingClientRect();
+                    tabsBar.classList.toggle('stuck', tb.top <= parseFloat(getComputedStyle(root).getPropertyValue('--nav-h')) + 1);
+                }
+            }
+            var ticking = false;
+            function onScroll() {
+                if (ticking) return;
+                ticking = true;
+                requestAnimationFrame(function () { updateChrome(); updateScrub(); ticking = false; });
+            }
+            window.addEventListener('scroll', onScroll, { passive: true });
+            window.addEventListener('resize', onScroll);
+            toTop.addEventListener('click', function () { window.scrollTo({ top: 0, behavior: reduce ? 'auto' : 'smooth' }); });
+
+            /* current section in the primary nav */
+            var navLinks = $$('.gnav-links a');
+            if (hasIO) {
+                var sio = new IntersectionObserver(function (entries) {
+                    entries.forEach(function (e) {
+                        if (!e.isIntersecting) return;
+                        navLinks.forEach(function (a) {
+                            if (a.getAttribute('href') === '#' + e.target.id) a.setAttribute('aria-current', 'location');
+                            else a.removeAttribute('aria-current');
+                        });
+                    });
+                }, { rootMargin: '-45% 0px -50% 0px' });
+                navLinks.forEach(function (a) {
+                    var s = document.querySelector(a.getAttribute('href'));
+                    if (s) sio.observe(s);
+                });
+            }
+
+            /* ---------- mobile menu ---------- */
+            var menuBtn = $('#menu-btn'), menu = $('#menu');
+            function setMenu(open) {
+                menuBtn.setAttribute('aria-expanded', String(open));
+                menu.hidden = !open;
+                document.body.style.overflow = open ? 'hidden' : '';
+            }
+            menuBtn.addEventListener('click', function () { setMenu(menuBtn.getAttribute('aria-expanded') !== 'true'); });
+            $$('a', menu).forEach(function (a) { a.addEventListener('click', function () { setMenu(false); }); });
+            document.addEventListener('keydown', function (e) {
+                if (e.key === 'Escape' && !menu.hidden) { setMenu(false); menuBtn.focus(); }
+            });
+            window.matchMedia('(min-width: 901px)').addEventListener('change', function (m) { if (m.matches) setMenu(false); });
+
+            /* ---------- platforms: highlight the card in view and its index entry ---------- */
+            var plats = $$('.plat'), platLinks = $$('.plat-index a');
+            if (hasIO) {
+                var pio = new IntersectionObserver(function (entries) {
+                    entries.forEach(function (e) {
+                        if (!e.isIntersecting) return;
+                        var idx = plats.indexOf(e.target);
+                        plats.forEach(function (p, i) { p.classList.toggle('is-active', i === idx); });
+                        platLinks.forEach(function (a, i) { a.classList.toggle('is-active', i === idx); });
+                    });
+                }, { rootMargin: '-40% 0px -55% 0px' });
+                plats.forEach(function (p) { pio.observe(p); });
+            }
+
+            /* ---------- experience tabs (WAI-ARIA tabs pattern, automatic activation) ---------- */
+            var seg = $('#seg'), thumb = $('.seg-thumb', seg), tabs = $$('[role="tab"]', seg);
+            var panels = tabs.map(function (t) { return document.getElementById(t.getAttribute('aria-controls')); });
+            function placeThumb(tab) {
+                thumb.style.width = tab.offsetWidth + 'px';
+                thumb.style.transform = 'translateX(' + tab.offsetLeft + 'px)';
+            }
+            function select(i, focus) {
+                tabs.forEach(function (t, j) {
+                    var on = i === j;
+                    t.setAttribute('aria-selected', String(on));
+                    t.tabIndex = on ? 0 : -1;
+                    panels[j].hidden = !on;
+                    if (on) {
+                        panels[j].classList.remove('enter');
+                        void panels[j].offsetWidth;
+                        panels[j].classList.add('enter');
+                    }
+                });
+                placeThumb(tabs[i]);
+                if (focus) tabs[i].focus();
+                tabs[i].scrollIntoView({ block: 'nearest', inline: 'nearest', behavior: reduce ? 'auto' : 'smooth' });
+                if (tabsBar.classList.contains('stuck')) {
+                    var top = tabsBar.parentNode.querySelector('.work-body').getBoundingClientRect().top + window.scrollY;
+                    window.scrollTo({ top: top - tabsBar.offsetHeight - 48 - 8, behavior: reduce ? 'auto' : 'smooth' });
+                }
+            }
+            tabs.forEach(function (t, i) {
+                t.addEventListener('click', function () { select(i, false); });
+                t.addEventListener('keydown', function (e) {
+                    var n = tabs.length, k = null;
+                    if (e.key === 'ArrowRight') k = (i + 1) % n;
+                    else if (e.key === 'ArrowLeft') k = (i - 1 + n) % n;
+                    else if (e.key === 'Home') k = 0;
+                    else if (e.key === 'End') k = n - 1;
+                    if (k !== null) { e.preventDefault(); select(k, true); }
+                });
+            });
+            panels.forEach(function (p, j) { p.hidden = j !== 0; });
+            seg.classList.add('no-thumb-anim');
+            placeThumb(tabs[0]);
+            requestAnimationFrame(function () { seg.classList.remove('no-thumb-anim'); });
+            window.addEventListener('resize', function () {
+                var cur = tabs.filter(function (t) { return t.getAttribute('aria-selected') === 'true'; })[0];
+                seg.classList.add('no-thumb-anim');
+                placeThumb(cur);
+                requestAnimationFrame(function () { seg.classList.remove('no-thumb-anim'); });
+            });
+            if (document.fonts && document.fonts.ready) document.fonts.ready.then(function () { placeThumb(tabs[0]); });
+
+            updateChrome();
+            updateScrub();
+            window.__siteReady = true;
+        })();
+    </script>
+</body>
+</html>
