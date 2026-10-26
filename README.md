@@ -1,5 +1,7 @@
 # gaurav-khanna.github.io
 
+V2
+
 Portfolio site for Gaurav Khanna, Lead Security Engineer (Network & Cloud Security).
 
 A single self-contained `index.html`: no build step, no framework, no external
